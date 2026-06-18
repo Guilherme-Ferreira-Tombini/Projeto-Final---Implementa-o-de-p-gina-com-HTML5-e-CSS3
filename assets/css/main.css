@@ -107,6 +107,18 @@
     object-fit: contain;
 }
 
+.evolution-gra{
+    width: 100%;
+}
+
+.evolution-gra-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /* ================  configuração para tablet e celular ================= */
 @media only screen and (max-width: 900px){
