@@ -1,0 +1,95 @@
+.welcome-site {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.text{
+    width: 45%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container{
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-container h1 {
+    font-size: 3.6rem;
+}
+
+.text-container p {
+    font-size: 1rem;
+}
+
+.text-container button {
+    width: 100%;
+    color: #5bb6c9;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.imagem {
+    width: 55%;
+    height: 100%;
+    background-image: url("../image/formato.png");
+    background-size: 470px;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img {
+    width: 75%;
+}
+
+@media only screen and (max-width: 900px){
+    .welcome-site{
+        flex-direction: column;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .text-container{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap:25px;
+    }
+
+    .text-container button {
+        width: 60%;
+    }
+
+    .imagem{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .text-container{
+        width: 100%;
+    }
+
+    .text-container p {
+        font-size: 1.2rem;
+    }
+}
