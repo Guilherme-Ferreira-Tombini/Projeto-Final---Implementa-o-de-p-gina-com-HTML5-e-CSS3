@@ -59,6 +59,56 @@
     width: 75%;
 }
 
+.generations-video-games {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 20px;
+}
+
+.generations-consoles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.generation-card {
+    border-radius: 15px;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform .3s ease;
+}
+
+.generation-card:hover {
+    transform: translateY(-8px);
+}
+
+.generation-card h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.console-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.console-images img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+
+/* ================  configuração para tablet e celular ================= */
 @media only screen and (max-width: 900px){
     .welcome-site{
         flex-direction: column;
@@ -82,6 +132,16 @@
     .imagem{
         display: none;
     }
+
+    .generations-consoles{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .console-images{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -91,5 +151,13 @@
 
     .text-container p {
         font-size: 1.2rem;
+    }
+    
+    .generations-video-games h1{
+        font-size: 1.9rem;
+    }
+
+    .generations-video-games p{
+        font-size: 0.85rem;
     }
 }
