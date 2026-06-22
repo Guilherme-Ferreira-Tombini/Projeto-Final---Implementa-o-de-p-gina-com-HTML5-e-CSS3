@@ -217,6 +217,54 @@
 }
 
 
+/* ================== Seção de Melhores jogos =================== */
+.top-games{
+    width: 100%;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:15px;
+}
+
+.top-games-cards{
+    display: flex;
+    padding: 40px;
+    width: 95%;
+    gap: 25px;
+    color:black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-game{
+    width: 240px;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.card-game img{
+    width: 100%;
+    height: 250px;
+}
+
+.card-text{
+    padding: 30px;
+}
+
+.card-text p{
+    padding-top: 10px;
+}
+
+
 /* ================  configuração para tablet e celular ================= */
 @media only screen and (max-width: 900px){
     .welcome-site{
@@ -320,4 +368,22 @@
         width: 100%;
         text-align: center;
     }
+
+    .top-games-cards{
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-games h1{
+        font-size: 2.3rem;
+        padding-bottom: 10px;
+    }
+
+    .card-game{
+        width: 100%;
+    }
+
 }
