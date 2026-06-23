@@ -69,7 +69,7 @@
     justify-content: center;
     align-items: center;
     padding: 60px;
-    gap: 20px;
+    gap: 25px;
 }
 
 .generations-consoles {
@@ -147,17 +147,6 @@
     font-size: 1.1rem;
 }
 
-.evolution-text button{
-    width: 50%;
-    color: #5bb6c9;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 12px;
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
 .impact-gra-container{
     width: 80%;
     display: flex;
@@ -182,17 +171,6 @@
 
 .impact-text p{
     font-size: 1.1rem;
-}
-
-.impact-text button{
-    width: 50%;
-    color: #5bb6c9;
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    border-radius: 12px;
-    font-size: 1.2rem;
-    cursor: pointer;
 }
 
 /* ================== Seção de curiosidades da evolução dos computadores =================== */
@@ -303,6 +281,46 @@
     .curiosity-evolution{
         width: 100%;
     }
+
+    .evolution-gra{
+        gap: 90px;
+    }
+
+    .evolution-gra-container{
+        flex-direction: column;
+        gap:40px;
+        width: 100%;
+    }
+
+    .evolution-image{
+        width: 100%;
+    }
+
+    .evolution-text{
+        width: 100%;
+        text-align: left;  
+    }
+
+    .impact-gra-container{
+        flex-direction: column-reverse;
+        width: 100%;
+        gap:40px;
+    }
+
+    .impact-text{
+        width: 100%;
+        text-align: right;
+    
+    }
+
+    .button-site-main{
+        width: 100%;
+    }
+
+    .curiosity-card{
+        text-align: center;
+    }
+
 }
 
 @media only screen and (max-width: 600px){
@@ -322,45 +340,8 @@
         font-size: 0.85rem;
     }
 
-    .evolution-gra{
-        gap: 90px;
-    }
-
-    .evolution-gra-container{
-        flex-direction: column;
-        gap:40px;
-        width: 100%;
-    }
-
-    .evolution-image{
-        width: 100%;
-    }
-
-    .evolution-text{
-        width: 100%;
-        text-align: justify;
-    }
-
-    .evolution-text button{
-        width: 100%;
-    }
-
-    .impact-gra-container{
-        flex-direction: column-reverse;
-        width: 100%;
-        gap:40px;
-    }
-
-    .impact-text{
-        width: 100%;
-        text-align: justify;
-    }
-
-    .impact-text button{
-        width: 100%;
-    }
-
     .curiosity-evolution{
+        padding: 20px 0px;
         flex-direction: column;
     }
 
@@ -384,6 +365,22 @@
 
     .card-game{
         width: 100%;
+    }
+
+    .evolution-gra{
+        gap:45px;
+    }
+
+    .evolution-text{
+        width: 100%;
+        text-align: justify;  
+        align-items: center;
+    }
+
+    .impact-text{
+        width: 100%;
+        text-align: justify;  
+        align-items: center;
     }
 
 }
