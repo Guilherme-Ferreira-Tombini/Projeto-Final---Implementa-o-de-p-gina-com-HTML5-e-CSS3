@@ -1,0 +1,386 @@
+/* ================== Seção de apresentação ao site =================== */
+.welcome-site {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.text{
+    width: 45%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container{
+    display: flex;
+    width: 55%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-container h1 {
+    font-size: 3.6rem;
+}
+
+.text-container p {
+    font-size: 1rem;
+}
+
+.text-container button {
+    width: 100%;
+    color: #5bb6c9;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.imagem {
+    width: 55%;
+    height: 100%;
+    background-image: url("../image/formato.png");
+    background-size: 470px;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img {
+    width: 75%;
+}
+
+
+/* ================== Seção de gerações de video-games =================== */
+.generations-video-games {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    gap: 25px;
+}
+
+.generations-consoles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-basis: calc(33.333% - 20px);
+}
+
+.generation-card {
+    border-radius: 15px;
+    padding: 10px;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform .3s ease;
+}
+
+.generation-card:hover {
+    transform: translateY(-8px);
+}
+
+.generation-card h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.console-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.console-images img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+
+/* ================== Seção de evolução dos graficos =================== */
+.evolution-gra{
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+.evolution-gra-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.evolution-image{
+    width: 50%;
+}
+
+.evolution-text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 20px;
+}
+
+.evolution-text p{
+    font-size: 1.1rem;
+}
+
+.impact-gra-container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.impact-image{
+    width: 50%;
+}
+
+.impact-text{
+    width: 50%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    text-align: right;
+    align-items: end;
+    gap: 20px;
+}
+
+.impact-text p{
+    font-size: 1.1rem;
+}
+
+/* ================== Seção de curiosidades da evolução dos computadores =================== */
+.curiosity-evolution{
+    width: 85%;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+}
+
+.curiosity-card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap:12px;
+}
+
+.curiosity-card p{
+    font-size: 1.1rem;
+}
+
+
+/* ================== Seção de Melhores jogos =================== */
+.top-games{
+    width: 100%;
+    color: white;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:15px;
+}
+
+.top-games-cards{
+    display: flex;
+    padding: 40px;
+    width: 95%;
+    gap: 25px;
+    color:black;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-game{
+    width: 240px;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.card-game img{
+    width: 100%;
+    height: 250px;
+}
+
+.card-text{
+    padding: 30px;
+}
+
+.card-text p{
+    padding-top: 10px;
+}
+
+
+/* ================  configuração para tablet e celular ================= */
+@media only screen and (max-width: 900px){
+    .welcome-site{
+        flex-direction: column;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .text-container{
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        gap:25px;
+    }
+
+    .text-container button {
+        width: 60%;
+    }
+
+    .imagem{
+        display: none;
+    }
+
+    .generations-consoles{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .console-images{
+        width: 100%;
+    }
+
+    .curiosity-evolution{
+        width: 100%;
+    }
+
+    .evolution-gra{
+        gap: 90px;
+    }
+
+    .evolution-gra-container{
+        flex-direction: column;
+        gap:40px;
+        width: 100%;
+    }
+
+    .evolution-image{
+        width: 100%;
+    }
+
+    .evolution-text{
+        width: 100%;
+        text-align: left;  
+    }
+
+    .impact-gra-container{
+        flex-direction: column-reverse;
+        width: 100%;
+        gap:40px;
+    }
+
+    .impact-text{
+        width: 100%;
+        text-align: right;
+    
+    }
+
+    .button-site-main{
+        width: 100%;
+    }
+
+    .curiosity-card{
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    .text-container{
+        width: 100%;
+    }
+
+    .text-container p {
+        font-size: 1.2rem;
+    }
+    
+    .generations-video-games h1{
+        font-size: 1.9rem;
+    }
+
+    .generations-video-games p{
+        font-size: 0.85rem;
+    }
+
+    .curiosity-evolution{
+        padding: 20px 0px;
+        flex-direction: column;
+    }
+
+    .curiosity-card{
+        width: 100%;
+        text-align: center;
+    }
+
+    .top-games-cards{
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top-games h1{
+        font-size: 2.3rem;
+        padding-bottom: 10px;
+    }
+
+    .card-game{
+        width: 100%;
+    }
+
+    .evolution-gra{
+        gap:45px;
+    }
+
+    .evolution-text{
+        width: 100%;
+        text-align: justify;  
+        align-items: center;
+    }
+
+    .impact-text{
+        width: 100%;
+        text-align: justify;  
+        align-items: center;
+    }
+
+}

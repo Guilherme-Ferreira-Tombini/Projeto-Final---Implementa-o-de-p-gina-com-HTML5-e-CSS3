@@ -20,9 +20,22 @@ body{
 }
 
 .color-text-primary{
-    background-color: #2E2E2E;
+    color: #2E2E2E;
 }
 
 .color-text-secundary{
-    background-color: #8a8888;
+    color: #8a8888;
+}
+
+/* ======================= Padrão de botao  ======================== */
+.button-site-main{
+    display: inline-block; 
+    width: 50%;
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
 }
