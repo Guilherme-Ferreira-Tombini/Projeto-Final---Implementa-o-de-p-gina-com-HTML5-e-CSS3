@@ -28,6 +28,17 @@ body{
 }
 
 /* ======================= Padrão de botao  ======================== */
+.button-site-header{
+    width: 100%;
+    color: #5bb6c9;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
 .button-site-main{
     display: inline-block; 
     width: 50%;
@@ -38,4 +49,12 @@ body{
     font-size: 1.2rem;
     text-align: center;
     cursor: pointer;
+}
+
+.button-site-header:hover,
+.button-site-main:hover {
+    background-color: #2F80ED;
+    color: white;
+    transform: scale(1.05);
+    transition: 0.3s ease;
 }
